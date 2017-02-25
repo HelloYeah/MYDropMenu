@@ -7,7 +7,7 @@
 
 <b>创建NormalDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
 ```
-    <b>//MYPresentedViewShowStyleFromBottomDropStyle  创建从下往上，上拉菜单
+    <b>MYPresentedViewShowStyleFromBottomDropStyle  创建从下往上，上拉菜单
     NormalDropMenu *menu = [[NormalDropMenu alloc]initWithShowFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 320, [UIScreen mainScreen].bounds.size.width, 320) ShowStyle:MYPresentedViewShowStyleFromBottomDropStyle callback:^(id callback) {
 
     NSLog(@"-----------------------操作了--%@",callback);
@@ -18,7 +18,7 @@
 <p>
 
 ```
-    <b>//MYPresentedViewShowStyleFromTopDropStyle 创建从上往下 ， 下拉菜单
+    <b>MYPresentedViewShowStyleFromTopDropStyle 创建从上往下 ， 下拉菜单
     NormalDropMenu *menu = [[NormalDropMenu alloc]initWithShowFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 320) ShowStyle:MYPresentedViewShowStyleFromTopDropStyle callback:^(id callback) {
 
     NSLog(@"---------------操作了-----%@",callback);
@@ -33,7 +33,7 @@
 <b> 创建SpreadDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
 
 ```
-    <b>//MYPresentedViewShowStyleFromBottomSpreadStyle 创建从下往上， 上拉菜单
+    <b>MYPresentedViewShowStyleFromBottomSpreadStyle 创建从下往上， 上拉菜单
     SpreadDropMenu *menu = [[SpreadDropMenu alloc]initWithShowFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 300, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleFromBottomSpreadStyle callback:^(id callback) {
 
     //在此处获取菜单对应的操作 ， 而做出一些处理
@@ -47,7 +47,7 @@
 <p>
 
 ```
-    <b>//MYPresentedViewShowStyleFromTopSpreadStyle 创建从上往下，下拉菜单
+    <b>MYPresentedViewShowStyleFromTopSpreadStyle 创建从上往下，下拉菜单
     SpreadDropMenu *menu = [[SpreadDropMenu alloc]initWithShowFrame:CGRectMake(0,64, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleFromTopSpreadStyle callback:^(id callback) {
 
     //在此处获取菜单对应的操作 ， 而做出一些处理
@@ -66,7 +66,7 @@
 <p>
 
 ```
-   <b>//MYPresentedViewShowStyleFromTopSpringStyle 从上往下，下拉弹簧菜单
+   <b>MYPresentedViewShowStyleFromTopSpringStyle 从上往下，下拉弹簧菜单
     SpringDropMenu *menu = [[SpringDropMenu alloc]initWithShowFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleFromTopSpringStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 
@@ -74,21 +74,21 @@
 <p>
 
 ```
-    <b>//MYPresentedViewShowStyleFromBottomSpringStyle 从下往上，上拉弹簧菜单
+    <b>MYPresentedViewShowStyleFromBottomSpringStyle 从下往上，上拉弹簧菜单
     SpringDropMenu *menu = [[SpringDropMenu alloc]initWithShowFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 300, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleFromBottomSpringStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 ```
 <p>
 
 ```
-    <b>//MYPresentedViewShowStyleFromTopSpringStyle 从上往下，展示在中间菜单（只需要设定最终的frame即可）
+    <b>MYPresentedViewShowStyleFromTopSpringStyle 从上往下，展示在中间菜单（只需要设定最终的frame即可）
     SpringDropMenu *menu = [[SpringDropMenu alloc]initWithShowFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 300)*0.5, ([UIScreen mainScreen].bounds.size.height - 300)*0.5, 300, 300) ShowStyle:MYPresentedViewShowStyleFromTopSpringStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 ```
 <p>
 
 ```
-    <b>//MYPresentedViewShowStyleFromBottomSpringStyle 从下往上，展示在中间菜单（只需要设定最终的frame即可）
+    <b>MYPresentedViewShowStyleFromBottomSpringStyle 从下往上，展示在中间菜单（只需要设定最终的frame即可）
     SpringDropMenu *menu = [[SpringDropMenu alloc]initWithShowFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 300)*0.5, ([UIScreen mainScreen].bounds.size.height - 300)*0.5, 300, 300) ShowStyle:MYPresentedViewShowStyleFromBottomSpringStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 
@@ -101,7 +101,7 @@
 <b> 创建SuddenDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
 <p>
 ```
-    <b>//MYPresentedViewShowStyleSuddenStyle 直接展示效果（小菜单，只需修改需要展示的frame即可）
+    <b>MYPresentedViewShowStyleSuddenStyle 直接展示效果（小菜单，只需修改需要展示的frame即可）
     SuddenDropMenu *menu = [[SuddenDropMenu alloc]initWithShowFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleSuddenStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 
