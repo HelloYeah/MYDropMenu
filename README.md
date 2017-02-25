@@ -111,7 +111,7 @@ MYPresentedViewShowStyleSuddenStyle 直接展示效果（小菜单，只需修�
 
 ```
 <p>
-![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/GIF1.gif)
+![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/GIF3.gif)
 
 
 
