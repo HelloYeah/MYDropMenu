@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9C9CBFF1E61248200DE991F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CBFE1E61248200DE991F /* main.m */; };
+		B9C9CC021E61248200DE991F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC011E61248200DE991F /* AppDelegate.m */; };
+		B9C9CC081E61248200DE991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C9CC061E61248200DE991F /* Main.storyboard */; };
+		B9C9CC0A1E61248200DE991F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C9CC091E61248200DE991F /* Assets.xcassets */; };
+		B9C9CC0D1E61248200DE991F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C9CC0B1E61248200DE991F /* LaunchScreen.storyboard */; };
+		B9C9CC181E61248200DE991F /* MYDropMenu_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC171E61248200DE991F /* MYDropMenu_ExampleTests.m */; };
+		B9C9CC231E61248200DE991F /* MYDropMenu_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC221E61248200DE991F /* MYDropMenu_ExampleUITests.m */; };
+		B9C9CC391E6124AA00DE991F /* MYColorBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC321E6124AA00DE991F /* MYColorBackView.m */; };
+		B9C9CC3A1E6124AA00DE991F /* MYPresentAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC341E6124AA00DE991F /* MYPresentAnimationManager.m */; };
+		B9C9CC3B1E6124AA00DE991F /* MYPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC361E6124AA00DE991F /* MYPresentationController.m */; };
+		B9C9CC3C1E6124AA00DE991F /* MYPresentedController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC381E6124AA00DE991F /* MYPresentedController.m */; };
+		B9C9CC3F1E6124E200DE991F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC3E1E6124E200DE991F /* ViewController.m */; };
+		B9C9CC571E61250D00DE991F /* NormalDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC431E61250D00DE991F /* NormalDropMenu.m */; };
+		B9C9CC581E61250D00DE991F /* NormalDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC451E61250D00DE991F /* NormalDropViewController.m */; };
+		B9C9CC591E61250D00DE991F /* SpreadDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC481E61250D00DE991F /* SpreadDropMenu.m */; };
+		B9C9CC5A1E61250D00DE991F /* SpreadDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC4A1E61250D00DE991F /* SpreadDropViewController.m */; };
+		B9C9CC5B1E61250D00DE991F /* SpringDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC4D1E61250D00DE991F /* SpringDropMenu.m */; };
+		B9C9CC5C1E61250D00DE991F /* SpringDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC4F1E61250D00DE991F /* SpringDropViewController.m */; };
+		B9C9CC5D1E61250D00DE991F /* SmallDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC521E61250D00DE991F /* SmallDropMenu.m */; };
+		B9C9CC5E1E61250D00DE991F /* SuddenDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC541E61250D00DE991F /* SuddenDropMenu.m */; };
+		B9C9CC5F1E61250D00DE991F /* SuddenDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC561E61250D00DE991F /* SuddenDropViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9C9CC141E61248200DE991F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9C9CBF21E61248200DE991F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9C9CBF91E61248200DE991F;
+			remoteInfo = MYDropMenu_Example;
+		};
+		B9C9CC1F1E61248200DE991F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9C9CBF21E61248200DE991F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9C9CBF91E61248200DE991F;
+			remoteInfo = MYDropMenu_Example;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9C9CBFA1E61248200DE991F /* MYDropMenu_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYDropMenu_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C9CBFE1E61248200DE991F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9C9CC001E61248200DE991F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9C9CC011E61248200DE991F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9C9CC071E61248200DE991F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9C9CC091E61248200DE991F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9C9CC0C1E61248200DE991F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9C9CC0E1E61248200DE991F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9C9CC131E61248200DE991F /* MYDropMenu_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYDropMenu_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C9CC171E61248200DE991F /* MYDropMenu_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYDropMenu_ExampleTests.m; sourceTree = "<group>"; };
+		B9C9CC191E61248200DE991F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9C9CC1E1E61248200DE991F /* MYDropMenu_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYDropMenu_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C9CC221E61248200DE991F /* MYDropMenu_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYDropMenu_ExampleUITests.m; sourceTree = "<group>"; };
+		B9C9CC241E61248200DE991F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9C9CC311E6124AA00DE991F /* MYColorBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYColorBackView.h; sourceTree = "<group>"; };
+		B9C9CC321E6124AA00DE991F /* MYColorBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYColorBackView.m; sourceTree = "<group>"; };
+		B9C9CC331E6124AA00DE991F /* MYPresentAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPresentAnimationManager.h; sourceTree = "<group>"; };
+		B9C9CC341E6124AA00DE991F /* MYPresentAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPresentAnimationManager.m; sourceTree = "<group>"; };
+		B9C9CC351E6124AA00DE991F /* MYPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPresentationController.h; sourceTree = "<group>"; };
+		B9C9CC361E6124AA00DE991F /* MYPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPresentationController.m; sourceTree = "<group>"; };
+		B9C9CC371E6124AA00DE991F /* MYPresentedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPresentedController.h; sourceTree = "<group>"; };
+		B9C9CC381E6124AA00DE991F /* MYPresentedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPresentedController.m; sourceTree = "<group>"; };
+		B9C9CC3D1E6124E200DE991F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9C9CC3E1E6124E200DE991F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9C9CC421E61250D00DE991F /* NormalDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDropMenu.h; sourceTree = "<group>"; };
+		B9C9CC431E61250D00DE991F /* NormalDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDropMenu.m; sourceTree = "<group>"; };
+		B9C9CC441E61250D00DE991F /* NormalDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDropViewController.h; sourceTree = "<group>"; };
+		B9C9CC451E61250D00DE991F /* NormalDropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDropViewController.m; sourceTree = "<group>"; };
+		B9C9CC471E61250D00DE991F /* SpreadDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadDropMenu.h; sourceTree = "<group>"; };
+		B9C9CC481E61250D00DE991F /* SpreadDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadDropMenu.m; sourceTree = "<group>"; };
+		B9C9CC491E61250D00DE991F /* SpreadDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadDropViewController.h; sourceTree = "<group>"; };
+		B9C9CC4A1E61250D00DE991F /* SpreadDropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadDropViewController.m; sourceTree = "<group>"; };
+		B9C9CC4C1E61250D00DE991F /* SpringDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringDropMenu.h; sourceTree = "<group>"; };
+		B9C9CC4D1E61250D00DE991F /* SpringDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringDropMenu.m; sourceTree = "<group>"; };
+		B9C9CC4E1E61250D00DE991F /* SpringDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringDropViewController.h; sourceTree = "<group>"; };
+		B9C9CC4F1E61250D00DE991F /* SpringDropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringDropViewController.m; sourceTree = "<group>"; };
+		B9C9CC511E61250D00DE991F /* SmallDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallDropMenu.h; sourceTree = "<group>"; };
+		B9C9CC521E61250D00DE991F /* SmallDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallDropMenu.m; sourceTree = "<group>"; };
+		B9C9CC531E61250D00DE991F /* SuddenDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuddenDropMenu.h; sourceTree = "<group>"; };
+		B9C9CC541E61250D00DE991F /* SuddenDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuddenDropMenu.m; sourceTree = "<group>"; };
+		B9C9CC551E61250D00DE991F /* SuddenDropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuddenDropViewController.h; sourceTree = "<group>"; };
+		B9C9CC561E61250D00DE991F /* SuddenDropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuddenDropViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9C9CBF71E61248200DE991F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C9CC101E61248200DE991F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C9CC1B1E61248200DE991F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9C9CBF11E61248200DE991F = {
+			isa = PBXGroup;
+			children = (
+				B9C9CBFC1E61248200DE991F /* MYDropMenu_Example */,
+				B9C9CC161E61248200DE991F /* MYDropMenu_ExampleTests */,
+				B9C9CC211E61248200DE991F /* MYDropMenu_ExampleUITests */,
+				B9C9CBFB1E61248200DE991F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9C9CBFB1E61248200DE991F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CBFA1E61248200DE991F /* MYDropMenu_Example.app */,
+				B9C9CC131E61248200DE991F /* MYDropMenu_ExampleTests.xctest */,
+				B9C9CC1E1E61248200DE991F /* MYDropMenu_ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9C9CBFC1E61248200DE991F /* MYDropMenu_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC401E61250D00DE991F /* examples */,
+				B9C9CC301E6124AA00DE991F /* MYDropMenu */,
+				B9C9CC001E61248200DE991F /* AppDelegate.h */,
+				B9C9CC011E61248200DE991F /* AppDelegate.m */,
+				B9C9CC3D1E6124E200DE991F /* ViewController.h */,
+				B9C9CC3E1E6124E200DE991F /* ViewController.m */,
+				B9C9CC061E61248200DE991F /* Main.storyboard */,
+				B9C9CC091E61248200DE991F /* Assets.xcassets */,
+				B9C9CC0B1E61248200DE991F /* LaunchScreen.storyboard */,
+				B9C9CC0E1E61248200DE991F /* Info.plist */,
+				B9C9CBFD1E61248200DE991F /* Supporting Files */,
+			);
+			path = MYDropMenu_Example;
+			sourceTree = "<group>";
+		};
+		B9C9CBFD1E61248200DE991F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CBFE1E61248200DE991F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9C9CC161E61248200DE991F /* MYDropMenu_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC171E61248200DE991F /* MYDropMenu_ExampleTests.m */,
+				B9C9CC191E61248200DE991F /* Info.plist */,
+			);
+			path = MYDropMenu_ExampleTests;
+			sourceTree = "<group>";
+		};
+		B9C9CC211E61248200DE991F /* MYDropMenu_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC221E61248200DE991F /* MYDropMenu_ExampleUITests.m */,
+				B9C9CC241E61248200DE991F /* Info.plist */,
+			);
+			path = MYDropMenu_ExampleUITests;
+			sourceTree = "<group>";
+		};
+		B9C9CC301E6124AA00DE991F /* MYDropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC311E6124AA00DE991F /* MYColorBackView.h */,
+				B9C9CC321E6124AA00DE991F /* MYColorBackView.m */,
+				B9C9CC331E6124AA00DE991F /* MYPresentAnimationManager.h */,
+				B9C9CC341E6124AA00DE991F /* MYPresentAnimationManager.m */,
+				B9C9CC351E6124AA00DE991F /* MYPresentationController.h */,
+				B9C9CC361E6124AA00DE991F /* MYPresentationController.m */,
+				B9C9CC371E6124AA00DE991F /* MYPresentedController.h */,
+				B9C9CC381E6124AA00DE991F /* MYPresentedController.m */,
+			);
+			path = MYDropMenu;
+			sourceTree = "<group>";
+		};
+		B9C9CC401E61250D00DE991F /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC411E61250D00DE991F /* normalDrop */,
+				B9C9CC461E61250D00DE991F /* spreadDrop */,
+				B9C9CC4B1E61250D00DE991F /* springDrop */,
+				B9C9CC501E61250D00DE991F /* suddenDrop */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		B9C9CC411E61250D00DE991F /* normalDrop */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC421E61250D00DE991F /* NormalDropMenu.h */,
+				B9C9CC431E61250D00DE991F /* NormalDropMenu.m */,
+				B9C9CC441E61250D00DE991F /* NormalDropViewController.h */,
+				B9C9CC451E61250D00DE991F /* NormalDropViewController.m */,
+			);
+			path = normalDrop;
+			sourceTree = "<group>";
+		};
+		B9C9CC461E61250D00DE991F /* spreadDrop */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC471E61250D00DE991F /* SpreadDropMenu.h */,
+				B9C9CC481E61250D00DE991F /* SpreadDropMenu.m */,
+				B9C9CC491E61250D00DE991F /* SpreadDropViewController.h */,
+				B9C9CC4A1E61250D00DE991F /* SpreadDropViewController.m */,
+			);
+			path = spreadDrop;
+			sourceTree = "<group>";
+		};
+		B9C9CC4B1E61250D00DE991F /* springDrop */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC4C1E61250D00DE991F /* SpringDropMenu.h */,
+				B9C9CC4D1E61250D00DE991F /* SpringDropMenu.m */,
+				B9C9CC4E1E61250D00DE991F /* SpringDropViewController.h */,
+				B9C9CC4F1E61250D00DE991F /* SpringDropViewController.m */,
+			);
+			path = springDrop;
+			sourceTree = "<group>";
+		};
+		B9C9CC501E61250D00DE991F /* suddenDrop */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9CC511E61250D00DE991F /* SmallDropMenu.h */,
+				B9C9CC521E61250D00DE991F /* SmallDropMenu.m */,
+				B9C9CC531E61250D00DE991F /* SuddenDropMenu.h */,
+				B9C9CC541E61250D00DE991F /* SuddenDropMenu.m */,
+				B9C9CC551E61250D00DE991F /* SuddenDropViewController.h */,
+				B9C9CC561E61250D00DE991F /* SuddenDropViewController.m */,
+			);
+			path = suddenDrop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9C9CBF91E61248200DE991F /* MYDropMenu_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C9CC271E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_Example" */;
+			buildPhases = (
+				B9C9CBF61E61248200DE991F /* Sources */,
+				B9C9CBF71E61248200DE991F /* Frameworks */,
+				B9C9CBF81E61248200DE991F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYDropMenu_Example;
+			productName = MYDropMenu_Example;
+			productReference = B9C9CBFA1E61248200DE991F /* MYDropMenu_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9C9CC121E61248200DE991F /* MYDropMenu_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C9CC2A1E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_ExampleTests" */;
+			buildPhases = (
+				B9C9CC0F1E61248200DE991F /* Sources */,
+				B9C9CC101E61248200DE991F /* Frameworks */,
+				B9C9CC111E61248200DE991F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9C9CC151E61248200DE991F /* PBXTargetDependency */,
+			);
+			name = MYDropMenu_ExampleTests;
+			productName = MYDropMenu_ExampleTests;
+			productReference = B9C9CC131E61248200DE991F /* MYDropMenu_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9C9CC1D1E61248200DE991F /* MYDropMenu_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C9CC2D1E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_ExampleUITests" */;
+			buildPhases = (
+				B9C9CC1A1E61248200DE991F /* Sources */,
+				B9C9CC1B1E61248200DE991F /* Frameworks */,
+				B9C9CC1C1E61248200DE991F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9C9CC201E61248200DE991F /* PBXTargetDependency */,
+			);
+			name = MYDropMenu_ExampleUITests;
+			productName = MYDropMenu_ExampleUITests;
+			productReference = B9C9CC1E1E61248200DE991F /* MYDropMenu_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9C9CBF21E61248200DE991F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "孟遥";
+				TargetAttributes = {
+					B9C9CBF91E61248200DE991F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					B9C9CC121E61248200DE991F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9C9CBF91E61248200DE991F;
+					};
+					B9C9CC1D1E61248200DE991F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9C9CBF91E61248200DE991F;
+					};
+				};
+			};
+			buildConfigurationList = B9C9CBF51E61248200DE991F /* Build configuration list for PBXProject "MYDropMenu_Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9C9CBF11E61248200DE991F;
+			productRefGroup = B9C9CBFB1E61248200DE991F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9C9CBF91E61248200DE991F /* MYDropMenu_Example */,
+				B9C9CC121E61248200DE991F /* MYDropMenu_ExampleTests */,
+				B9C9CC1D1E61248200DE991F /* MYDropMenu_ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9C9CBF81E61248200DE991F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C9CC0D1E61248200DE991F /* LaunchScreen.storyboard in Resources */,
+				B9C9CC0A1E61248200DE991F /* Assets.xcassets in Resources */,
+				B9C9CC081E61248200DE991F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C9CC111E61248200DE991F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C9CC1C1E61248200DE991F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9C9CBF61E61248200DE991F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C9CC5E1E61250D00DE991F /* SuddenDropMenu.m in Sources */,
+				B9C9CC3F1E6124E200DE991F /* ViewController.m in Sources */,
+				B9C9CC3A1E6124AA00DE991F /* MYPresentAnimationManager.m in Sources */,
+				B9C9CC3B1E6124AA00DE991F /* MYPresentationController.m in Sources */,
+				B9C9CC3C1E6124AA00DE991F /* MYPresentedController.m in Sources */,
+				B9C9CC5B1E61250D00DE991F /* SpringDropMenu.m in Sources */,
+				B9C9CC5A1E61250D00DE991F /* SpreadDropViewController.m in Sources */,
+				B9C9CC581E61250D00DE991F /* NormalDropViewController.m in Sources */,
+				B9C9CC391E6124AA00DE991F /* MYColorBackView.m in Sources */,
+				B9C9CC021E61248200DE991F /* AppDelegate.m in Sources */,
+				B9C9CC5C1E61250D00DE991F /* SpringDropViewController.m in Sources */,
+				B9C9CC571E61250D00DE991F /* NormalDropMenu.m in Sources */,
+				B9C9CC5F1E61250D00DE991F /* SuddenDropViewController.m in Sources */,
+				B9C9CC5D1E61250D00DE991F /* SmallDropMenu.m in Sources */,
+				B9C9CC591E61250D00DE991F /* SpreadDropMenu.m in Sources */,
+				B9C9CBFF1E61248200DE991F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C9CC0F1E61248200DE991F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C9CC181E61248200DE991F /* MYDropMenu_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C9CC1A1E61248200DE991F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C9CC231E61248200DE991F /* MYDropMenu_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9C9CC151E61248200DE991F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9C9CBF91E61248200DE991F /* MYDropMenu_Example */;
+			targetProxy = B9C9CC141E61248200DE991F /* PBXContainerItemProxy */;
+		};
+		B9C9CC201E61248200DE991F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9C9CBF91E61248200DE991F /* MYDropMenu_Example */;
+			targetProxy = B9C9CC1F1E61248200DE991F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9C9CC061E61248200DE991F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9C9CC071E61248200DE991F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9C9CC0B1E61248200DE991F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9C9CC0C1E61248200DE991F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9C9CC251E61248200DE991F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9C9CC261E61248200DE991F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9C9CC281E61248200DE991F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MYDropMenu_Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mengyao-block-outlook.com.MYDropMenu-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B9C9CC291E61248200DE991F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MYDropMenu_Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mengyao-block-outlook.com.MYDropMenu-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B9C9CC2B1E61248200DE991F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MYDropMenu_ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mengyao-block-outlook.com.MYDropMenu-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYDropMenu_Example.app/MYDropMenu_Example";
+			};
+			name = Debug;
+		};
+		B9C9CC2C1E61248200DE991F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MYDropMenu_ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mengyao-block-outlook.com.MYDropMenu-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYDropMenu_Example.app/MYDropMenu_Example";
+			};
+			name = Release;
+		};
+		B9C9CC2E1E61248200DE991F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MYDropMenu_ExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mengyao-block-outlook.com.MYDropMenu-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MYDropMenu_Example;
+			};
+			name = Debug;
+		};
+		B9C9CC2F1E61248200DE991F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MYDropMenu_ExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mengyao-block-outlook.com.MYDropMenu-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MYDropMenu_Example;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9C9CBF51E61248200DE991F /* Build configuration list for PBXProject "MYDropMenu_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C9CC251E61248200DE991F /* Debug */,
+				B9C9CC261E61248200DE991F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9C9CC271E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C9CC281E61248200DE991F /* Debug */,
+				B9C9CC291E61248200DE991F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9C9CC2A1E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C9CC2B1E61248200DE991F /* Debug */,
+				B9C9CC2C1E61248200DE991F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9C9CC2D1E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C9CC2E1E61248200DE991F /* Debug */,
+				B9C9CC2F1E61248200DE991F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9C9CBF21E61248200DE991F /* Project object */;
+}
