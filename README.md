@@ -87,29 +87,29 @@ MYPresentedViewShowStyleFromTopSpringStyle 从上往下，展示在中间菜单�
     SpringDropMenu *menu = [[SpringDropMenu alloc]initWithShowFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 300)*0.5, ([UIScreen mainScreen].bounds.size.height - 300)*0.5, 300, 300) ShowStyle:MYPresentedViewShowStyleFromTopSpringStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 ```
-<br>
+
 MYPresentedViewShowStyleFromBottomSpringStyle 从下往上，展示在中间菜单（只需要设定最终的frame即可）
-<br>
+
 ```
     SpringDropMenu *menu = [[SpringDropMenu alloc]initWithShowFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 300)*0.5, ([UIScreen mainScreen].bounds.size.height - 300)*0.5, 300, 300) ShowStyle:MYPresentedViewShowStyleFromBottomSpringStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 
 ```
-<br>
+
 ![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/GIF2.gif)
-<br>
+
 
 ## 4. 直接展示，小菜单效果
 <b> 创建SuddenDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
-<br>
+
 MYPresentedViewShowStyleSuddenStyle 直接展示效果（小菜单，只需修改需要展示的frame即可）
-<br>
+
 ```
     SuddenDropMenu *menu = [[SuddenDropMenu alloc]initWithShowFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleSuddenStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
 
 ```
-<br>
+
 ![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/GIF3.gif)
 
 
