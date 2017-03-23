@@ -35,7 +35,6 @@ MYPresentedViewShowStyleFromTopDropStyle 创建从上往下 ， 下拉菜单
 <b> 创建SpreadDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
 MYPresentedViewShowStyleFromBottomSpreadStyle 创建从下往上， 上拉菜单
 <br>
-
 ```
     SpreadDropMenu *menu = [[SpreadDropMenu alloc]initWithShowFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 300, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleFromBottomSpreadStyle callback:^(id callback) {
 
