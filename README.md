@@ -3,7 +3,7 @@
 
 
 
-## 1. 上拉下拉菜单 ，位移动画
+## 1. 上拉下拉菜单 ，位移动画<p>
 
 <b>创建NormalDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
 MYPresentedViewShowStyleFromBottomDropStyle  创建从下往上，上拉菜单
@@ -28,9 +28,10 @@ MYPresentedViewShowStyleFromTopDropStyle 创建从上往下 ， 下拉菜单
 
 ```
 <br>
+
 ![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/GIF.gif)
 
-## 2. 上拉下拉菜单 ， 展开动画
+## 2. 上拉下拉菜单 ， 展开动画<p>
 <b> 创建SpreadDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
 MYPresentedViewShowStyleFromBottomSpreadStyle 创建从下往上， 上拉菜单
 <br>
@@ -61,7 +62,9 @@ MYPresentedViewShowStyleFromTopSpreadStyle 创建从上往下，下拉菜单
 
 ```
 <br>
+
 ![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/GIF1.gif)
+
 <br>
 ## 3. 上拉下拉中间展示菜单 ， 弹簧动画
 <b> 创建SpringDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
