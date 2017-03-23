@@ -78,6 +78,7 @@ MYPresentedViewShowStyleFromBottomSpringStyle 从下往上，上拉弹簧菜单
 ```
     SpringDropMenu *menu = [[SpringDropMenu alloc]initWithShowFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 300, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleFromBottomSpringStyle callback:nil];
     [self presentViewController:menu animated:YES completion:nil];
+
 ```
 <br>
 MYPresentedViewShowStyleFromTopSpringStyle 从上往下，展示在中间菜单（只需要设定最终的frame即可）
