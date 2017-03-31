@@ -113,6 +113,19 @@ MYPresentedViewShowStyleSuddenStyle 直接展示效果（小菜单，只需修�
 ![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/GIF3.gif)
 
 
+## 5. 收缩小菜单效果
+<b> 创建SuddenDropMenu菜单，继承于MYPresentedController ,并自己实现该展示的UI样式
+MYPresentedViewShowStyleShrinkTopLeftStyle/MYPresentedViewShowStyleShrinkTopRightStyle/MYPresentedViewShowStyleShrinkBottomLeftStyle/MYPresentedViewShowStyleShrinkBottomRightStyle 收缩小菜单效果（小菜单，只需设置需要展示的frame即可）
+
+```
+SuddenDropMenu *menu = [[SuddenDropMenu alloc]initWithShowFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 300) ShowStyle:MYPresentedViewShowStyleShrinkTopLeftStyle callback:nil];
+[self presentViewController:menu animated:YES completion:nil];
+
+```
+
+![image](https://github.com/coderMyy/MYDropMenu/blob/master/animationGIF/shrink.gif)
+
+
 
 
 

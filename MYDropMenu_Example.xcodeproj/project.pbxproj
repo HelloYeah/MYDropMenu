@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B80341331E8E185B00C3FC97 /* ShrinkDropController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80341311E8E185B00C3FC97 /* ShrinkDropController.m */; };
+		B80341341E8E185B00C3FC97 /* ShrinkDropController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80341321E8E185B00C3FC97 /* ShrinkDropController.xib */; };
+		B80341371E8E194000C3FC97 /* ShrinkDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B80341361E8E194000C3FC97 /* ShrinkDropMenu.m */; };
 		B9C9CBFF1E61248200DE991F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CBFE1E61248200DE991F /* main.m */; };
 		B9C9CC021E61248200DE991F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9CC011E61248200DE991F /* AppDelegate.m */; };
 		B9C9CC081E61248200DE991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C9CC061E61248200DE991F /* Main.storyboard */; };
@@ -48,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B80341301E8E185B00C3FC97 /* ShrinkDropController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDropController.h; sourceTree = "<group>"; };
+		B80341311E8E185B00C3FC97 /* ShrinkDropController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDropController.m; sourceTree = "<group>"; };
+		B80341321E8E185B00C3FC97 /* ShrinkDropController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShrinkDropController.xib; sourceTree = "<group>"; };
+		B80341351E8E194000C3FC97 /* ShrinkDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDropMenu.h; sourceTree = "<group>"; };
+		B80341361E8E194000C3FC97 /* ShrinkDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDropMenu.m; sourceTree = "<group>"; };
 		B9C9CBFA1E61248200DE991F /* MYDropMenu_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYDropMenu_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C9CBFE1E61248200DE991F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9C9CC001E61248200DE991F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +125,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B803412F1E8E183100C3FC97 /* shrinkDrop */ = {
+			isa = PBXGroup;
+			children = (
+				B80341301E8E185B00C3FC97 /* ShrinkDropController.h */,
+				B80341311E8E185B00C3FC97 /* ShrinkDropController.m */,
+				B80341321E8E185B00C3FC97 /* ShrinkDropController.xib */,
+				B80341351E8E194000C3FC97 /* ShrinkDropMenu.h */,
+				B80341361E8E194000C3FC97 /* ShrinkDropMenu.m */,
+			);
+			path = shrinkDrop;
+			sourceTree = "<group>";
+		};
 		B9C9CBF11E61248200DE991F = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +219,7 @@
 		B9C9CC401E61250D00DE991F /* examples */ = {
 			isa = PBXGroup;
 			children = (
+				B803412F1E8E183100C3FC97 /* shrinkDrop */,
 				B9C9CC411E61250D00DE991F /* normalDrop */,
 				B9C9CC461E61250D00DE991F /* spreadDrop */,
 				B9C9CC4B1E61250D00DE991F /* springDrop */,
@@ -360,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9C9CC0D1E61248200DE991F /* LaunchScreen.storyboard in Resources */,
+				B80341341E8E185B00C3FC97 /* ShrinkDropController.xib in Resources */,
 				B9C9CC0A1E61248200DE991F /* Assets.xcassets in Resources */,
 				B9C9CC081E61248200DE991F /* Main.storyboard in Resources */,
 			);
@@ -390,7 +412,9 @@
 				B9C9CC3F1E6124E200DE991F /* ViewController.m in Sources */,
 				B9C9CC3A1E6124AA00DE991F /* MYPresentAnimationManager.m in Sources */,
 				B9C9CC3B1E6124AA00DE991F /* MYPresentationController.m in Sources */,
+				B80341371E8E194000C3FC97 /* ShrinkDropMenu.m in Sources */,
 				B9C9CC3C1E6124AA00DE991F /* MYPresentedController.m in Sources */,
+				B80341331E8E185B00C3FC97 /* ShrinkDropController.m in Sources */,
 				B9C9CC5B1E61250D00DE991F /* SpringDropMenu.m in Sources */,
 				B9C9CC5A1E61250D00DE991F /* SpreadDropViewController.m in Sources */,
 				B9C9CC581E61250D00DE991F /* NormalDropViewController.m in Sources */,
@@ -633,6 +657,7 @@
 				B9C9CC291E61248200DE991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9C9CC2A1E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +666,7 @@
 				B9C9CC2C1E61248200DE991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9C9CC2D1E61248200DE991F /* Build configuration list for PBXNativeTarget "MYDropMenu_ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +675,7 @@
 				B9C9CC2F1E61248200DE991F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

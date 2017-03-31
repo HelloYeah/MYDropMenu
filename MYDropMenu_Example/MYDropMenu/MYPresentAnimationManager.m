@@ -129,7 +129,7 @@
             _presented = !_presented;
         }];
         //直接呈现
-    }else{
+    }else if(_showStyle == MYPresentedViewShowStyleSuddenStyle){
         
         _presented ? (presentedView.alpha = 1.0) : (presentedView.alpha = 0.00001);
         [UIView animateWithDuration:0.1 animations:^{
@@ -140,6 +140,54 @@
             [transitionContext completeTransition:YES];
             _presented = !_presented;
         }];
+    }else if (_showStyle ==MYPresentedViewShowStyleShrinkBottomRightStyle||
+              _showStyle == MYPresentedViewShowStyleShrinkBottomLeftStyle||
+              _showStyle == MYPresentedViewShowStyleShrinkTopRightStyle||
+              _showStyle == MYPresentedViewShowStyleShrinkTopLeftStyle){
+        //设置锚点
+        switch (_showStyle) {
+            case MYPresentedViewShowStyleShrinkBottomRightStyle:
+            {
+                presentedView.layer.anchorPoint = CGPointMake(1, 1);
+            }
+                break;
+            case MYPresentedViewShowStyleShrinkBottomLeftStyle:
+            {
+                presentedView.layer.anchorPoint = CGPointMake(0, 1);
+            }
+                break;
+            case MYPresentedViewShowStyleShrinkTopRightStyle:
+            {
+                presentedView.layer.anchorPoint = CGPointMake(1, 0);
+            }
+                break;
+            case MYPresentedViewShowStyleShrinkTopLeftStyle:
+            {
+                presentedView.layer.anchorPoint = CGPointMake(0, 0);
+            }
+                break;
+            default:
+                break;
+        }
+        if (_presented) {
+            [UIView animateWithDuration:0.3 animations:^{
+                presentedView.alpha = 0.0001;
+                presentedView.transform = CGAffineTransformMakeScale(0.5, 0.5);
+            } completion:^(BOOL finished) {
+                [transitionContext completeTransition:YES];
+                _presented = !_presented;
+            }];
+        }else{
+            presentedView.transform = CGAffineTransformMakeScale(0.0001, 0.0001);
+            presentedView.alpha = 0.0001;
+            [UIView animateWithDuration:0.3 animations:^{
+                presentedView.alpha = 1;
+                presentedView.transform = CGAffineTransformIdentity;
+            } completion:^(BOOL finished) {
+                [transitionContext completeTransition:YES];
+                _presented = !_presented;
+            }];
+        }
     }
 }
 
@@ -174,6 +222,12 @@
             break;
         case MYPresentedViewShowStyleSuddenStyle:
             
+            frame      = _showViewFrame;
+            break;
+        case MYPresentedViewShowStyleShrinkTopLeftStyle:
+        case MYPresentedViewShowStyleShrinkTopRightStyle:
+        case MYPresentedViewShowStyleShrinkBottomLeftStyle:
+        case MYPresentedViewShowStyleShrinkBottomRightStyle:
             frame      = _showViewFrame;
             break;
         default:

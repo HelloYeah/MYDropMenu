@@ -11,6 +11,7 @@
 #import "SpreadDropViewController.h"
 #import "SpringDropViewController.h"
 #import "SuddenDropViewController.h"
+#import "ShrinkDropController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -36,7 +37,7 @@
 - (NSArray *)styleNames
 {
     if (!_styleNames) {
-        _styleNames = @[@"位移动画上拉下拉使用",@"展开动画上下下拉使用",@"弹簧动画上拉下拉使用",@"直接呈现菜单使用"];
+        _styleNames = @[@"位移动画上拉下拉使用",@"展开动画上下下拉使用",@"弹簧动画上拉下拉使用",@"直接呈现菜单使用",@"收缩小菜单使用"];
     }
     return _styleNames;
 }
@@ -77,7 +78,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return self.styleNames.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -118,6 +119,11 @@
             [self.navigationController pushViewController:normalDropVc animated:YES];
         }
             break;
+        case 4:
+        {
+            ShrinkDropController *shrinkDropVc = [[ShrinkDropController alloc]init];
+            [self.navigationController pushViewController:shrinkDropVc animated:YES];
+        }
         default:
             break;
     }

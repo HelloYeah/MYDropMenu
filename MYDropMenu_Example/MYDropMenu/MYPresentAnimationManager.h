@@ -27,7 +27,15 @@ typedef NS_ENUM(NSInteger){
     //从下到上弹簧效果
     MYPresentedViewShowStyleFromBottomSpringStyle  = 5,
     //直接呈现效果
-    MYPresentedViewShowStyleSuddenStyle  = 6
+    MYPresentedViewShowStyleSuddenStyle            = 6,
+    //左上角收缩效果
+    MYPresentedViewShowStyleShrinkTopLeftStyle     = 7,
+    //左下角收缩效果
+    MYPresentedViewShowStyleShrinkBottomLeftStyle  = 8,
+    //右上角收缩效果
+    MYPresentedViewShowStyleShrinkTopRightStyle    = 9,
+    //右下角收缩效果
+    MYPresentedViewShowStyleShrinkBottomRightStyle = 10
     
 }MYPresentedViewShowStyle;
 
